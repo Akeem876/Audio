@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import albumArt from "./images/default-song-image.png";
 function Details() {
  return (
@@ -54,9 +55,11 @@ function Details() {
    </form>
    <footer>
     <div className="fixedBtn">
-     <button>
-      Next Step <i className="fas fa-arrow-right"></i>
-     </button>
+     <Link to="/add">
+      <button>
+       Next Step <i className="fas fa-arrow-right"></i>
+      </button>
+     </Link>
     </div>
    </footer>
   </main>
