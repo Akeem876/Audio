@@ -20,7 +20,7 @@ const Nav = () => {
      </Link>
      <div className="separator"></div>
      <div className="premium">
-      <h4>premium</h4>
+      <h5>premium</h5>
      </div>
     </div>
    </div>
@@ -42,10 +42,12 @@ const Nav = () => {
       <i className="fas fa-bell"></i>
      </div>
     </div>
-    <div className="upload">
-     <i className="fas fa-upload"></i>
-     <Link to="/details">upload</Link>
-    </div>
+    <Link to="/details">
+     <div className="upload">
+      <i className="fas fa-upload"></i>
+      upload
+     </div>
+    </Link>
    </div>
   </nav>
  );

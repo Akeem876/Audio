@@ -10,6 +10,7 @@ html {
  width: 100%;
  height: 100%;
  background-color: #ededed;
+ /* padding-bottom: 60px; */
 }
 /* burger-menu */
 .hamburger {
@@ -56,14 +57,18 @@ nav {
  align-items: center;
  width: 170px;
 }
+.title h4 {
+ color: #111;
+}
 .title span {
  color: #ffc200;
 }
 .premium {
- color: #b3b3b3;
+ color: #b3b3b3 !important;
+ font-size: 1rem;
 }
 .separator {
- width: 2px;
+ width: 0.6px;
  height: 20px;
  background-color: #d3d3d3;
  border-radius: 1px;
@@ -75,7 +80,7 @@ nav {
  align-items: center;
 }
 .search-bar input[type="text"] {
- border: none;
+ border: none !important;
  outline: none;
  background-color: #ededed;
  width: 280px;
@@ -120,7 +125,125 @@ nav {
 .upload .fas {
  margin-right: 5px;
 }
-main,
-section {
- margin-top: 200px;
+main {
+ margin-top: 50px;
+}
+main h2 {
+ font-size: 1.6rem;
+ font-weight: 300;
+}
+/* Error */
+.error h2 {
+ color: #111;
+}
+/* details  */
+label {
+ font-weight: 600;
+ font-size: 0.8rem;
+ margin-bottom: 15px;
+}
+input[type="text"] {
+ outline: #b3b3b3;
+ padding: 10px 15px;
+ border: #d3d3d3 solid 1px;
+}
+input[type="text"]:hover {
+ border: #a3a2a2 solid 1px;
+}
+input[type="text"]:focus {
+ border: #a3a2a2 solid 1px;
+}
+.header {
+ padding: 60px;
+ text-align: center;
+}
+.details form {
+ background-color: #fff;
+ width: 56%;
+ margin: 10px auto 40px;
+ padding: 18px 28px 40px;
+ box-shadow: #9e9e9e33 2px 2px 7px;
+}
+.details img {
+ height: 290px;
+}
+.lower-album-info {
+ /* background-color: azure; */
+ width: 500px;
+}
+.lower-album-info > * {
+ margin-block: 20px;
+}
+.main-album-info {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 20px;
+}
+.artist-info,
+.album-info,
+.genre-info {
+ display: flex;
+ flex-direction: column;
+}
+.secondary-album-info {
+ display: flex;
+ justify-content: space-between;
+}
+.secondary-album-info input[type="text"] {
+ width: 270px;
+}
+.subgenre,
+.mood,
+.explicit {
+ display: flex;
+ flex-direction: column;
+}
+/* .tertiary-album-info {
+ background-color: aqua;
+} */
+.tertiary-album-info p {
+ text-align: end;
+ font-size: 0.9rem;
+ margin: 10px 0;
+}
+.tertiary-album-info p span {
+ color: #ffc200;
+ cursor: pointer;
+}
+.tertiary-album-info p span:hover {
+ color: #e0ac00;
+}
+.album-desc {
+ display: flex;
+ flex-direction: column;
+}
+.album-desc textarea {
+ resize: none;
+ outline: none;
+ height: 120px;
+ border: #d3d3d3 solid 1px;
+}
+footer {
+ height: 100px;
+}
+footer .fixedBtn {
+ position: fixed;
+ bottom: 20px;
+ left: 50%;
+ margin-left: -50px;
+ display: flex;
+ align-items: center;
+}
+footer button {
+ border: none;
+ outline: none;
+ padding: 13px 16px;
+ background-color: #ffae00;
+ color: #fff;
+ font-size: 1.1rem;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ width: 170px;
+ border-radius: 30px;
 }

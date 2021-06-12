@@ -26,9 +26,9 @@ function App() {
     <Route path="/edit">
      <Edit />
     </Route>
-    <Route path="*">
+    {/* <Route path="*">
      <Error />
-    </Route>
+    </Route> */}
    </Switch>
   </Router>
  );
